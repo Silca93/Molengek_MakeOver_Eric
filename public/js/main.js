@@ -20,7 +20,7 @@ let logofooter = () => {
     logoFooter.src = logo;
     
     
-    document.querySelector(".positionlogofooter").appendChild(logoFooter)
+    document.querySelector(".footermolenLogo").appendChild(logoFooter)
 }
 logofooter();
 // let faceLogo = data.reseauxSociaux.facebook
