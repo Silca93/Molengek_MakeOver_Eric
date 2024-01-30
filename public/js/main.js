@@ -23,17 +23,33 @@ let logofooter = () => {
     document.querySelector(".footermolenLogo").appendChild(logoFooter)
 }
 logofooter();
-// let faceLogo = data.reseauxSociaux.facebook
 
-// let image
 
-// let logoFace = () =>{
-//     image = document.createElement("img")
-//     image.src = faceLogo
-//     document.querySelector(".facebook").appendChild(image)
 
-// }
 
-// logoFace();
-    
+
+
+console.log(data.partenaires.bxFormation)
+
+// let carrouImage = data.partenaires.key.logo
+var slides = document.querySelectorAll('.slide');
+
+// let imgCarrou
+
+Object.keys(data.partenaires).forEach((key, index) => {
+    let slide = slides[index];
+    if (slide) {
+        let carrouImage = data.partenaires[key].logo;
+        let imgCarrou = document.createElement("img");
+        imgCarrou.src = carrouImage;
+        imgCarrou.style.height = "120px"
+        imgCarrou.style.width = "200px"
+
+        slide.appendChild(imgCarrou);
+    }
+});
+
+
+
+
     
