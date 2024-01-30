@@ -286,7 +286,11 @@ padding-left: 20px;
   height: 80px;
   text-align: center;
   border-radius: 10px;
+  border: solid 2px whitesmoke;
   background-color: rgb(64, 145, 108);
+  box-shadow: 1px 2px 0px px rgba(0,0,0,0.97);
+  -webkit-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
+  -moz-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
   color:whitesmoke;
   font-size: 11px;
   padding: 2px 5px;
@@ -307,10 +311,18 @@ padding-left: 20px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 1px 3px 0px 5px rgba(0,0,0,0.97);
--webkit-box-shadow: 1px 3px 0px 5px rgba(0,0,0,0.97);
--moz-box-shadow: 1px 3px 0px 5px rgba(0,0,0,0.97);
+  -webkit-box-shadow: 1px 3px 0px 5px rgba(0,0,0,0.97);
+  -moz-box-shadow: 1px 3px 0px 5px rgba(0,0,0,0.97);
   text-align: center;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  
+}
+
+#contactButton{
+  text-decoration: none;
+  color: black;
 }
 
 .partners{
@@ -400,6 +412,7 @@ padding-left: 20px;
 }
 .mapsRight{
   display: flex;
+  gap: 10px;
   flex-direction: column;
   align-items: end;
   justify-content: center;
@@ -416,11 +429,41 @@ padding-left: 20px;
 }
 
 
+.newsLetter {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin-right: -30px;
+}
+
+.newsLetterleft{
+  width: 50%;
+  height: 30px;
+}
+.newsLetterright{
+  padding-top: 15px;
+  width: 50%;
+
+  
+}
+
+.news {
+  height: 35px;
+ 
+}
+
+
 .position {
   display: flex;
+  flex-direction: column;
   gap: 5px;
   
 }
+.position p{
+ margin: 0;
+ text-align: end;
+}
+
 .phone {
   display: flex;
   gap: 5px;

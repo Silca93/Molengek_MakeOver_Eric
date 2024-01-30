@@ -43,7 +43,6 @@ Object.keys(data.partenaires).forEach((key, index) => {
         imgCarrou.src = carrouImage;
         imgCarrou.style.height = "120px"
         imgCarrou.style.width = "200px"
-
         slide.appendChild(imgCarrou);
     }
 });
