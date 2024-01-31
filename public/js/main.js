@@ -6,6 +6,7 @@ let img
 let molenlogo = () =>{
     img = document.createElement("img")
     img.src = logo
+    img.href = "./public/page/coworking.html"
     document.querySelector(".HeaderBotLeft").appendChild(img)
 
 }

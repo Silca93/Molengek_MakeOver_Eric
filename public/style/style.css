@@ -1,3 +1,5 @@
+
+
 /* FONTS */
 @font-face {
   font-family: "";
@@ -7,24 +9,26 @@
 
 
 body {
-  width: 100vw;
+  width: 100dvw;
+  overflow-x: hidden;
   background-color:rgb(216, 243, 220) ;
   margin: 0;
   margin-bottom: 0px;
   padding: 0;
-  overflow-x: hidden;
+ 
   font-family: 'Silkscreen', sans-serif;
   
 }
 main {
   width: 100%;
+  overflow-x: hidden;
 }
 
 
 header {
   width: 100%;
   height: 20%;
-  background-color: rgb(216, 243, 220);
+  /* background-color: rgb(216, 243, 220); */
 
   
 
@@ -32,40 +36,38 @@ header {
 
 
 
-.textecolor {
-  color: rgb(198, 139, 139);
-}
 
 .HeaderBot {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: calc(0.6rem + 0.4vw) ;
   border: solid 1px rgb(235, 231, 231)
 
 }
 
 .HeaderBotLeft {
+  /* margin-left: -25px; */
   display: flex;
   height: 100%;
-  width: 20%;
-  justify-content: center;
+  width: 15%;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgb(183, 228, 199);
+  background-color: rgb(64, 145, 108);
   border-right: solid 1px rgb(235, 231, 231);
 
 }
 
 .HeaderBotLeft img {
-  width: 150px;
-  height: 40px;
+  width: 80%;
+  height: 50%;
 
 }
 
 .HeaderBotCenter {
   height: 100%;
-  width:60%;
+  width:75%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -91,16 +93,13 @@ header {
 .headerBotRight {
   display: flex;
   height: 100%;
-  width: 20%;
+  width: 10%;
   align-items: center;
   border-left: solid 1px rgb(235, 231, 231);
   font-weight: 500;
   justify-content: center;
   
-  
 }
-
-
 
 
 .sec1 {
@@ -401,7 +400,7 @@ padding-left: 20px;
 /* google maps*/
 .maps {
   width: 100%;
-  height: 500px;
+  
   margin-bottom: -30px;
   display: flex;
   
@@ -431,24 +430,21 @@ padding-left: 20px;
 
 .newsLetter {
   width: 100%;
-  height: 50px;
+  height: 120px;
   display: flex;
+  flex-direction: column;
   margin-right: -30px;
 }
 
-.newsLetterleft{
-  width: 50%;
-  height: 30px;
-}
-.newsLetterright{
-  padding-top: 15px;
-  width: 50%;
 
   
-}
+
+  
+
 
 .news {
-  height: 35px;
+  height: 25px;
+  width: 150px;
  
 }
 
@@ -497,7 +493,7 @@ padding-left: 20px;
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(149, 213, 178);
-  gap: 150px;
+  gap: 120px;
 }
 
 .facebook,
@@ -547,11 +543,102 @@ padding-left: 20px;
 
 
 
-/* HEADER */
-/* RESPONSIVE */
-/* MAIN */
-/* RESPONSIVE */
-/* FOOTER */
+
 /* RESPONSIVE */
 
+
+
+@media (max-width: 1200px) {
+  .HeaderBotCenter {
+    font-size:13px;
+
+  }
+  .social {
+    gap: 50px;
+  }
+
+  
+}
+
+/*? laptop*/
+
+@media (max-width: 1024px) {
+  
+  .social {
+    height: 140px;
+    gap: 5px;
+  }
+  .newsLetter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps {
+    flex-direction: column;
+    
+  }
+  .mapsLeft {
+    width: 100%;
+  }
+  .mapsRight {
+    width: 100%;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+}
+
+/* ? tablet */
+@media (max-width: 768px) {
+  
+  .Cards {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+  }
+  .Cards .chef-container1{
+    height: 300px;
+    width: 200px;
+  }
+  .Cards .chef-container2{
+    height: 300px;
+    width: 200px;
+  }
+  .Cards .chef-container3{
+    height: 300px;
+    width: 200px;
+  }
+  .first {
+    width: 100px;
+    height: 60px;
+
+  }
+  .first p {
+    font-size: 8px;
+  }
+  .bannerText {
+    font-size: 35px
+  }
+
+  .HeaderBotCenter {
+    font-size: 10px;
+  }
+
+  
+}
+
+/* ? mobile M */
+@media (max-width: 425px) {
+  
+  .social {
+    font-size: smaller;
+  }
+
+
+
+  
+}
 /*# sourceMappingURL=app.css.map */
