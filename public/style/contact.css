@@ -39,7 +39,7 @@
     width: 20%;
     justify-content: center;
     align-items: center;
-    background-color: rgb(183, 228, 199);
+    background-color: rgb(82, 183, 136);
     border-right: solid 1px rgb(235, 231, 231);
   
   }
@@ -88,7 +88,7 @@
   }
 
   .formSection{
-    background-color: rgb(116, 198, 157);
+    background-color: rgb(183, 228, 199);
     width: 100%;
     height: 600px;
     display: flex;

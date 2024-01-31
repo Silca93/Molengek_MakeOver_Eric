@@ -1,15 +1,18 @@
 import data from "./../json/molengeek.json" assert { type: "json" }
 var logo = data.molengeekLogo
 
-let img 
 
-let molenlogo = () =>{
-    img = document.createElement("img")
-    img.src = logo
-    img.href = "./public/page/coworking.html"
-    document.querySelector(".HeaderBotLeft").appendChild(img)
+let molenlogo = () => {
+    let img = document.createElement("img");
+    img.src = logo;
 
+    let a = document.createElement("a");
+    a.href = "../../index.html";
+    a.appendChild(img);
+
+    document.querySelector(".HeaderBotLeft").appendChild(a);
 }
+
 
 molenlogo();
 
@@ -73,6 +76,8 @@ for (let index = 0; index < data.formations.seancesInfos.length; index++) {
         
     }
     
+
+ 
  
 
    
