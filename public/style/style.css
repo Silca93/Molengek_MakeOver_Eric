@@ -24,18 +24,27 @@ main {
   overflow-x: hidden;
 }
 
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
 
-header {
-  width: 100%;
-  height: 20%;
-  /* background-color: rgb(216, 243, 220); */
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 6px 6px;
+  background-color: red;
 
-  
 
 }
 
 
-
+header {
+  width: 100%;
+  height: 20%;
+  background-color: rgb(216, 243, 220);
+}
 
 .HeaderBot {
   width: 100%;
@@ -51,8 +60,8 @@ header {
   /* margin-left: -25px; */
   display: flex;
   height: 100%;
-  width: 15%;
-  justify-content: space-between;
+  width: 10%;
+  justify-content: center;
   align-items: center;
   background-color: rgb(64, 145, 108);
   border-right: solid 1px rgb(235, 231, 231);
@@ -73,12 +82,14 @@ header {
   justify-content: space-around;
   font-weight:500;
   font-size:17px;
+  
   /* background-color: cadetblue; */
 
 }
 
 .HeaderBotCenter a{
   text-decoration: none;
+  color: rgb(3, 69, 3);
   
   
  
@@ -95,9 +106,17 @@ header {
   height: 100%;
   width: 10%;
   align-items: center;
-  border-left: solid 1px rgb(235, 231, 231);
+  border-left: solid 1px rgb(101, 123, 101);
   font-weight: 500;
   justify-content: center;
+  
+  
+}
+.headerBotRight a{
+  color: rgb(3, 69, 3);
+  text-decoration: none;
+  font-size: 17px;
+  
   
 }
 
@@ -106,8 +125,9 @@ header {
   height: 800px;
   width: 100%;
   background-image: url(../assets/image/MolenGeek.jpg);
-  background-size: 1700px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0px -100px;
 }
 
 
@@ -633,9 +653,23 @@ padding-left: 20px;
 
 /* ? mobile M */
 @media (max-width: 425px) {
+  .menu-toggle {
+    display: block;
+  }
+
   
   .social {
     font-size: smaller;
+  }
+  .HeaderBot {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .HeaderBot.show {
+    display: flex;
+    flex-direction: column;
   }
 
 

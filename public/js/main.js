@@ -78,6 +78,12 @@ for (let index = 0; index < data.formations.seancesInfos.length; index++) {
     
 
  
+
+document.querySelector(".menu-toggle").addEventListener('click', function () {
+        var nav = document.querySelector('.HeaderBot');
+        nav.classList.toggle('show');
+   });
+      
  
 
    

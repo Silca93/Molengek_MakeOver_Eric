@@ -34,17 +34,108 @@ logofooter();
 
 
 
+// let allFormationNames = Array.from(document.querySelectorAll('.firstlong')); // querySelectorAll mit en array directement
+// let dataFormationNames = Object.values(data.formations.formationsLongues).map(formation => formation.nom); // je récupère nom dans formation longue
 
 
+// je le inner html
 
-let infosData = data.formations.formationsLongues[0];
-console.log(infosData);
-for (let index = 0; index < data.formations.formationsLongues.length; index++) {
-        let theP = document.createElement("p")
-        let infosData = data.formations.formationsLongues;
-        theP.innerText = infosData;
-        document.querySelectorAll(".firstlong")[index].appendChild(theP)
-        
-}
+// allFormationNames.forEach((element, index) => {
+//     if (dataFormationNames[index]) {
+//         element.innerHTML = dataFormationNames[index];
+//     }
+// });
+var formations = data.formations;
+   
+   var divs = document.querySelectorAll('.firstlong');
+   var i = 0;
+   for (var formation in formations.formationsLongues) {
+    var div = divs[i];
+    div.innerHTML = '<span style="color:white;">' + formations.formationsLongues[formation].nom + '</span> : <br> ';
+    div.innerHTML += '<br>' + formations.formationsLongues[formation].duree + '<br>';
+    div.innerHTML += '<br>' + formations.formationsLongues[formation].descriptif + '<br>';
+    div.innerHTML += '<br>' + formations.formationsLongues[formation].condition.ageMax + '<br>';
+    div.innerHTML += '<br>' + formations.formationsLongues[formation].condition.situation + '<br>';
+    div.innerHTML += '<br>' + formations.formationsLongues[formation].condition.prix + '<br>';
+    div.innerHTML += '<br>' + formations.formationsLongues[formation].condition.horaire + '<br><br><br><br><br>';
+    i++;
+   }
+   
+
+ 
+for (let index = 0; index < data.formations.formationsCourtes.length; index++) {
+    let theP = document.createElement("p")
+    let infosData = data.formations.formationsCourtes[index].nom;
+    theP.innerText = infosData;
+    document.querySelectorAll(".firstShort")[index].appendChild(theP)
     
+}
 
+for (let index = 0; index < data.formations.formationsCourtes.length; index++) {
+    let theP = document.createElement("p")
+    let infosData = data.formations.formationsCourtes[index].pack;
+    theP.innerText = infosData;
+    document.querySelectorAll(".firstShort")[index].appendChild(theP)
+    
+}
+
+
+
+
+
+
+
+
+
+   let url1 = data.videosTemoignage.videoI;
+   
+   let puturl1 = document.querySelector(".testiWeb iframe");
+   puturl1.src = url1;
+
+
+   
+
+
+
+   let url2 = data.videosTemoignage.videoII;
+   
+   let puturl2 = document.querySelector(".testiMarket iframe");
+   puturl2.src = url2;
+
+  
+
+let navigationToggleOn = document.querySelector(".courte");
+let navigationToggleOn1 = document.querySelector(".descriptifLongues");
+let navigationToggleOn2 = document.querySelector(".texteLongue");
+
+let navigationToggleOff = document.querySelector(".longue");
+let navigationToggleOff1 = document.querySelector(".descriptifCourtes");
+let navigationToggleOff2 = document.querySelector(".texteCourte");
+
+
+
+
+
+
+navigationToggleOn.addEventListener("click", () => {
+    navigationToggleOn1.style.display = "none";
+    navigationToggleOn2.style.display = "none";
+    navigationToggleOff1.style.display = "flex"
+    navigationToggleOff2.style.display = "flex"
+
+
+
+})
+
+navigationToggleOff.addEventListener("click", () => {
+    navigationToggleOff1.style.display = "none";
+    navigationToggleOff2.style.display = "none";
+    navigationToggleOn1.style.display = "flex";
+    navigationToggleOn2.style.display = "flex";
+
+
+})
+
+
+
+  

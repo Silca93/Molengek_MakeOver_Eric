@@ -36,8 +36,8 @@ header {
   /* margin-left: -25px; */
   display: flex;
   height: 100%;
-  width: 15%;
-  justify-content: space-between;
+  width: 10%;
+  justify-content: center;
   align-items: center;
   background-color: rgb(64, 145, 108);
   border-right: solid 1px rgb(235, 231, 231);
@@ -58,12 +58,14 @@ header {
   justify-content: space-around;
   font-weight:500;
   font-size:17px;
+  
   /* background-color: cadetblue; */
 
 }
 
 .HeaderBotCenter a{
   text-decoration: none;
+  color: rgb(3, 69, 3);
   
   
  
@@ -80,9 +82,17 @@ header {
   height: 100%;
   width: 10%;
   align-items: center;
-  border-left: solid 1px rgb(235, 231, 231);
+  border-left: solid 1px rgb(101, 123, 101);
   font-weight: 500;
   justify-content: center;
+  
+  
+}
+.headerBotRight a{
+  color: rgb(3, 69, 3);
+  text-decoration: none;
+  font-size: 17px;
+  
   
 }
 
@@ -168,14 +178,16 @@ header {
   width: 100%;
   height: 600px;
   background-image: url(../assets/image/formations2jpg.jpg);
+  
   background-size:cover;
-  background-position: 0px -450px;
+  background-position: 0px -300px;
+  background-repeat: no-repeat;
   
 }
 
 .sec2 {
   width: 100%;
-  height: 1000px;
+  
   display: flex;
   flex-direction: column;
   background-color: rgb(183, 228, 199);
@@ -206,6 +218,7 @@ header {
   box-shadow: 1px 2px 0px px rgba(0,0,0,0.97);
   -webkit-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
   -moz-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
+  cursor: pointer;
 
   
 }
@@ -224,19 +237,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   
 }
 .descriptif{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.texteCourte{
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px 20px;
-}
 .texteLongue{
   width: 50%;
   display: flex;
@@ -244,16 +255,111 @@ header {
   padding: 10px 20px;
  
 }
+
+.texteCourte{
+  width: 50%;
+  display: none;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
 .texteLongue p{
   font-size: 17px;
  
 }
 
 .descriptifLongues {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  
+
 
 }
 
 .firstlong{
-  width: 100px;
+ font-size: 17px;
+ width: 90%;
+ height: 300px;
+ background-color: rgb(64, 145, 108);
+ border-radius: 15px;
+ padding: 20px 20px;
+ border: solid 2px whitesmoke;
+  box-shadow: 1px 2px 0px px rgba(0,0,0,0.97);
+  -webkit-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
+  -moz-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
+  transition-duration: 0.3s;
+}
+.firstlong:hover {
+  scale: 1.05;
+  outline: solid 3px rgb(114, 228, 154);
+ 
+}
+
+
+
+.descriptifCourtes {
+  width: 50%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+
+}
+
+.firstShort{
+  font-size: 17px;
+  width: 50%;
+  height: 150px;
+  background-color: rgb(64, 145, 108);
+  border-radius: 15px;
+  padding: 20px 20px;
+  border: solid 2px whitesmoke;
+   box-shadow: 1px 2px 0px px rgba(0,0,0,0.97);
+   -webkit-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
+   -moz-box-shadow: 1px 2px 0px 2px rgba(0,0,0,0.97);
+   transition-duration: 0.3s;
+ }
+.firstShort:hover{
+  scale: 1.05
+ }
+
+
+
+
+.testiTitle {
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgb(64, 145, 108);
+  padding: 10px 0px;
+}
+.testimonials {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.testiWeb {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+}
+.testiMarket {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.bradius {
+  border-radius: 15px;
 }
 
