@@ -13,7 +13,20 @@ main {
   overflow-x: hidden;
 }
   
-  
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 6px 6px;
+  background-color: rgb(39, 114, 80);
+
+
+}
 
 
 header {
@@ -154,9 +167,11 @@ header {
   
 }
 .positionlogofooter p{
- color: whitesmoke;
-  
-}
+  color: whitesmoke;
+  text-align: center;
+  padding: 5px 10px;
+   
+ }
 
 .copyright {
   color: gray !important;
@@ -363,3 +378,135 @@ header {
   border-radius: 15px;
 }
 
+
+
+/* ? responsive */
+
+@media (max-width: 1200px) {
+  .HeaderBotCenter {
+    font-size:13px;
+
+  }
+
+  .headerBotRight a{
+    font-size: 13px;
+  }
+  .social {
+    gap: 50px;
+  }
+
+  
+}
+
+/*? laptop*/
+
+@media (max-width: 1024px) {
+  
+  .social {
+    height: 140px;
+    gap: 5px;
+  }
+  .newsLetter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps {
+    flex-direction: column;
+    
+  }
+  .mapsLeft {
+    width: 100%;
+  }
+  .mapsRight {
+    width: 100%;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+}
+
+/* ? tablet */
+@media (max-width: 768px) {
+  
+  .Cards {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+  }
+  .Cards .chef-container1{
+    height: 300px;
+    width: 200px;
+  }
+  .Cards .chef-container2{
+    height: 300px;
+    width: 200px;
+  }
+  .Cards .chef-container3{
+    height: 300px;
+    width: 200px;
+  }
+  .first {
+    width: 100px;
+    height: 60px;
+
+  }
+  .first p {
+    font-size: 8px;
+  }
+  .bannerText {
+    font-size: 35px
+  }
+
+  .HeaderBotCenter {
+    font-size: 10px;
+  }
+  .headerBotRight a{
+    font-size: 10px;
+  }
+
+  
+}
+
+/* ? mobile M */
+@media (max-width: 550px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  
+  .social {
+    font-size: smaller;
+  }
+  .HeaderBot {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .HeaderBot.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 150px;
+    padding-bottom: 20px;
+  }
+  .HeaderBotCenter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .HeaderBotLeft{
+    width: 20%;
+
+  }
+
+  .headerBotRight{
+    border-left: none ;
+  }
+}

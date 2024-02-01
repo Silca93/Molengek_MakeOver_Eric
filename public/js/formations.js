@@ -79,6 +79,74 @@ for (let index = 0; index < data.formations.formationsCourtes.length; index++) {
     
 }
 
+// let theFAQ = data.FAQ;
+
+// var theDiv = document.querySelectorAll(".accordion-body")
+// var theDiv2 = document.querySelectorAll(".accordion-button")
+// var i = 0;
+
+// for (var theAnswers in theFAQ){
+//     var div = theDiv[i]
+//     var div2 = theDiv2[i]
+
+//     if (div % 2 != 0) {
+//     div.innerHTML = theFAQ[theAnswers]
+//     console.log(div);
+    
+//    }else {
+//     div2.innerHTML = theFAQ[theAnswers]
+//    }
+//    i++;
+// }
+
+// let theFAQ = data.FAQ;
+// let theFAQindex = Object.values(theFAQ)
+// console.log(theFAQindex);
+// var theDiv = document.querySelectorAll(".accordion-body")
+// var i = 0;
+
+// for (var theAnswers in theFAQindex){
+//     var div = theDiv[i]
+
+//     if (theFAQindex % 2 !== 0) {
+//         div.innerHTML = theFAQ[theAnswers]
+//         console.log(div);
+//     }
+//     i = i + 1;
+// }
+// let theFAQ = data.FAQ;
+// let theFAQindex = Object.values(theFAQ);
+// console.log(theFAQindex);
+// var theDiv = document.querySelectorAll(".accordion-body")
+// var i = 0;
+
+// for (var answer of theFAQindex){
+//     var div = theDiv[i]
+
+//     if (i % 2 !== 0) { 
+//         div.innerHTML = answer;
+//         console.log(div);
+//     }
+
+//     i++;
+// }
+
+
+
+// for (let i = 0; i < theFAQindex.length; i++) {
+//     if (theFAQindex[i] % 2 !== 0) {
+//         theDiv[i].innerHTML = theFAQindex[i]
+//         console.log(theFAQindex[i]);
+        
+//       }
+//     i++;
+    
+    
+// }
+
+
+
+
 
 
 
@@ -135,6 +203,16 @@ navigationToggleOff.addEventListener("click", () => {
 
 
 })
+
+
+
+
+
+document.querySelector(".menu-toggle").addEventListener('click', function () {
+    var nav = document.querySelector('.HeaderBot');
+    nav.classList.toggle('show');
+});
+  
 
 
 
