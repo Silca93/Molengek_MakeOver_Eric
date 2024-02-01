@@ -75,7 +75,10 @@ for (let index = 0; index < data.formations.seancesInfos.length; index++) {
         document.querySelectorAll(".first")[index].appendChild(theP)
         
     }
+ 
     
+
+
 
  
 
@@ -84,7 +87,17 @@ document.querySelector(".menu-toggle").addEventListener('click', function () {
         nav.classList.toggle('show');
    });
       
- 
+
+
+ let socialLinks = data.reseauxSociaux;
+
+ let thetextLinks = document.querySelector(".facebook")
+
+for (let key in socialLinks) {
+    console.log(socialLinks[key]);
+    let aMake = document.createElement("a")
+}
+
 
    
 

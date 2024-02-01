@@ -523,6 +523,7 @@ padding-left: 20px;
 .linkedin
  {
   display: flex;
+  align-items: center;
   gap: 10px;
   color: whitesmoke;
   padding: 10px 30px;
@@ -552,6 +553,8 @@ padding-left: 20px;
   align-items: center;
   
 }
+
+
 .positionlogofooter p{
  color: whitesmoke;
  text-align: center;

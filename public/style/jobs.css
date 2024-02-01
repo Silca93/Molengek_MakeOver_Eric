@@ -211,6 +211,7 @@ header {
   .linkedin
    {
     display: flex;
+    align-items: center;
     gap: 10px;
     color: whitesmoke;
     padding: 10px 30px;

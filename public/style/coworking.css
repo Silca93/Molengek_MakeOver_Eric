@@ -272,6 +272,7 @@ header {
   .linkedin
    {
     display: flex;
+    align-items: center;
     gap: 10px;
     color: whitesmoke;
     padding: 10px 30px;
@@ -383,7 +384,7 @@ header {
     display: flex;
     flex-direction: column;
   }
-  
+
   .right {
    
     width: 100%;
