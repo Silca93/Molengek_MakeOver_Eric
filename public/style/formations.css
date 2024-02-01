@@ -181,6 +181,7 @@ header {
 
 .sec1{
   width: 100%;
+  
 
 }
 
@@ -253,14 +254,19 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
   
 }
+
 .descriptif{
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.formaDigitale {
+  padding-bottom: 40px;
 }
 
 .texteLongue{
@@ -278,7 +284,7 @@ header {
   padding: 10px 20px;
 }
 
-.texteLongue p{
+.texteLongue p {
   font-size: 17px;
  
 }
@@ -290,15 +296,12 @@ header {
   justify-content: center;
   align-items: start;
   gap: 30px;
-  
-
-
 }
 
 .firstlong{
  font-size: 17px;
  width: 90%;
- height: 300px;
+ height: 380px;
  background-color: rgb(64, 145, 108);
  border-radius: 15px;
  padding: 20px 20px;
@@ -321,14 +324,19 @@ header {
   display: none;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 30px;
 
 }
 
 .firstShort{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 17px;
-  width: 50%;
+  width: 70%;
   height: 150px;
   background-color: rgb(64, 145, 108);
   border-radius: 15px;
@@ -342,6 +350,10 @@ header {
 .firstShort:hover{
   scale: 1.05
  }
+
+ /* .firstShort p {
+  color: whitesmoke;
+ } */
 
 
 
@@ -382,10 +394,23 @@ header {
 
 /* ? responsive */
 
+
 @media (max-width: 1200px) {
   .HeaderBotCenter {
     font-size:13px;
 
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 20px;
+  }
+  .testiMarket{
+    width: 100%;
+  }
+  .testiWeb{
+    width: 100%;
   }
 
   .headerBotRight a{
@@ -393,6 +418,13 @@ header {
   }
   .social {
     gap: 50px;
+  }
+  .firstShort {
+    font-size: smaller;
+  }
+
+  .formationsBanner{
+    background-position: 0px -0px;
   }
 
   
@@ -467,6 +499,17 @@ header {
   .headerBotRight a{
     font-size: 10px;
   }
+  .firstlong {
+    font-size: smaller;
+  }
+  .firstShort{
+    font-size: 12px;
+  }
+
+  .twoButtons{
+    display: flex;
+    flex-direction: column;
+  }
 
   
 }
@@ -508,5 +551,11 @@ header {
 
   .headerBotRight{
     border-left: none ;
+  }
+  .firstlong {
+    font-size: 12px;
+  }
+  .firstShort{
+    font-size: 10px;
   }
 }

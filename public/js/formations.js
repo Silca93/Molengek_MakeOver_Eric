@@ -81,18 +81,19 @@ for (let index = 0; index < data.formations.formationsCourtes.length; index++) {
 
 // let theFAQ = data.FAQ;
 
-// var theDiv = document.querySelectorAll(".accordion-body")
 // var theDiv2 = document.querySelectorAll(".accordion-button")
+// var theDiv = document.querySelectorAll(".accordion-body")
 // var i = 0;
 
 // for (var theAnswers in theFAQ){
 //     var div = theDiv[i]
 //     var div2 = theDiv2[i]
+    
 
 //     if (div % 2 != 0) {
-//     div.innerHTML = theFAQ[theAnswers]
+//     div2.innerHTML = theFAQ[theAnswers]
 //     console.log(div);
-    
+//     }
 //    }else {
 //     div2.innerHTML = theFAQ[theAnswers]
 //    }
@@ -114,11 +115,7 @@ for (let index = 0; index < data.formations.formationsCourtes.length; index++) {
 //     }
 //     i = i + 1;
 // }
-// let theFAQ = data.FAQ;
-// let theFAQindex = Object.values(theFAQ);
-// console.log(theFAQindex);
-// var theDiv = document.querySelectorAll(".accordion-body")
-// var i = 0;
+
 
 // for (var answer of theFAQindex){
 //     var div = theDiv[i]
@@ -133,19 +130,55 @@ for (let index = 0; index < data.formations.formationsCourtes.length; index++) {
 
 
 
-// for (let i = 0; i < theFAQindex.length; i++) {
-//     if (theFAQindex[i] % 2 !== 0) {
-//         theDiv[i].innerHTML = theFAQindex[i]
-//         console.log(theFAQindex[i]);
-        
-//       }
-//     i++;
-    
-    
-// }
+let FAQ = data.FAQ;
+let reponses = [];
+
+for (let key in FAQ) {
+    if (key.endsWith("questionI")) {
+        reponses.push(FAQ[key]);
+    }else if (key.endsWith("questionII")) {
+        reponses.push(FAQ[key]);
+    }else if (key.endsWith("questionIII")) {
+        reponses.push(FAQ[key]);
+    }else if (key.endsWith("questionIV")) {
+        reponses.push(FAQ[key]);
+    }else if (key.endsWith("questionV")) {
+        reponses.push(FAQ[key]);
+    }
+}
+
+var theDiv2 = document.querySelectorAll(".accordion-button");
+
+for (let i = 0; i < theDiv2.length; i++) {
+    if (i < reponses.length) {
+        theDiv2[i].innerHTML = reponses[i];
+    }
+}
 
 
+let reponses2 = [];
 
+for (let key in FAQ) {
+    if (key.endsWith("reponseI")) {
+        reponses2.push(FAQ[key]);
+    }else if (key.endsWith("reponseII")) {
+        reponses2.push(FAQ[key]);
+    }else if (key.endsWith("reponseIII")) {
+        reponses2.push(FAQ[key]);
+    }else if (key.endsWith("reponseIV")) {
+        reponses2.push(FAQ[key]);
+    }else if (key.endsWith("reponseV")) {
+        reponses2.push(FAQ[key]);
+    }
+}
+
+var theDiv = document.querySelectorAll(".accordion-body");
+
+for (let i = 0; i < theDiv.length; i++) {
+    if (i < reponses2.length) {
+        theDiv[i].innerHTML = reponses2[i];
+    }
+}
 
 
 
